@@ -1,0 +1,345 @@
+/*Fonts*/
+@font-face
+{
+	font-family: 'Adam';
+	src: url('../fonts/Adam.otf');
+}
+
+@font-face
+{
+	font-family: 'geosans';
+	src: url('../fonts/GeosansLight.ttf');
+}
+/*Placeholder Color*/
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: black
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: black;
+}
+/*All Pages*/
+body
+{ 
+	font-family					:Arial, Helvetica, sans-serif; 
+	margin						:0;
+	padding						:none;
+	background-attachment		:fixed;
+	background-image			:url(../images/conn.png);
+	background-repeat			:repeat;
+}
+
+.top-nav
+{
+	width				:100%;
+	height				:100px;
+	background-color	:rgba(7,7,7, 0.2);
+	margin-top			:0px;
+	margin-left			:0px;
+	border-bottom		:solid 2px rgba(7,7,7, 0.3);
+	background-color	:rgba(7,7,7, 0.5);
+	position 			:top;				  
+
+}
+
+.top-nav a
+{
+	margin-top: 10px;
+	text-align: center;
+	font-family: "Adam";
+	font-size: 100px;
+	color: dodgerblue;
+	text-decoration: none;
+	line-height: 100px;
+	cursor: default;
+}
+
+.frm
+{
+	display						: block;
+	margin-top					: 10%; 
+	margin-left					: auto;
+	margin-right				: auto;
+	width						: 200px;
+	box-shadow					: 5px 5px 5px 5px rgba(0,0,0, 0.5);
+	background-color			: rgba(7,7,7, 0.2);
+	filter						: alpha(opacity=50);
+	-moz-opacity				: 0.5;
+	border-radius				: 20px;
+	border						: solid 0.5px rgba(7,7,7, 0.3);
+	padding						: 2%;
+}
+
+.inp
+{
+	border-radius				: 12px;
+	margin						: auto;
+	border						: none;
+	border-bottom				: 2px black solid;
+	background-color			: rgba(255,255,255, 0.6);
+	width						: 200px; 
+	font-size					: 16px;
+	font-family					: "geosans";
+	padding						: 10px;
+}
+
+.inp:focus
+{
+	outline: none;
+	border-bottom: 2px #D12E7D solid;
+	border-right: 2px #D12E7D solid;
+}
+
+.notice
+{
+	display:block;
+	margin: auto;
+	height: 20px;
+	font-size: 18px;
+	text-align: center;
+	font-family: "geosans";
+	color: #D12E7D;
+}
+
+input[placeholder]
+{
+	text-align					: center;
+}
+
+#login:hover, #register:hover, #reset:hover, #ulbuts1:hover, #ulbuts2:hover, #snap:hover, #upload:hover
+{
+	color				: dodgerblue;
+	background-color	: rgba(7,7,7, 0.4);
+}
+
+
+.allButs
+{
+	width: 124px;
+	height: 25px;
+	font-size: 18px;
+	border-radius: 8px;
+	text-align: center;
+	font-family: "geosans";
+	background-color: rgba(255,255,255, 0.6);
+	border: solid 0.5px rgba(7,7,7, 1);
+	outline:none;
+}
+
+/*index.php*/
+#signin
+{
+	height: 280px;
+}
+
+#ulbuts1, #ulbuts2
+{
+	margin-top: 10px;
+	list-style: none;
+	text-decoration: none;
+}
+
+#ulbuts1 a, #ulbuts2 a
+{
+	text-decoration: none;
+	color: black;
+	cursor: default;
+}
+
+#ulbuts1 a:hover, #ulbuts2 a:hover
+{
+	color: dodgerblue;
+}
+
+#login
+{
+	margin-left: 38px;
+	margin-bottom: 30px;
+}
+
+/*reg.php*/
+#signup
+{
+	height: 355px;  
+}
+
+#pass_checker
+{
+	margin-top: 5px;
+	height: 60px;
+	text-align: center;
+}
+
+#sc, #length, #conf
+{
+	font-size: 18px;
+	font-family: "geosans";
+	color: #D12E7D;
+	visibility: hidden;
+}
+
+.figure
+{
+	height:20px;
+}
+
+#register
+{
+	margin-top: 5px;
+	margin-left: 38px;
+}
+
+.home
+{
+	text-align: center;
+}
+
+.home a
+{
+	text-decoration: none;
+	color: black;
+	cursor: default;
+	font-family: "geosans";
+}
+
+.home a:hover
+{
+	color:dodgerblue;
+}
+
+/*reset.php*/
+#reset
+{
+	height: 280px;
+}
+
+#resetBut
+{
+	margin-left: 38px;
+}
+
+/*camagru.php*/
+#top-pics
+{
+	margin: none;
+	display: block;
+	width: 100%;
+	height: 300px;
+	margin-top: 2%;
+}
+
+#vid, #canv
+{
+	display: inline-flex;
+	margin-right: none; 
+	margin-left: 3%;
+	width: 400px;
+	height: 100%;
+}
+
+#logout
+{
+	position: absolute;
+	top: 4%;
+	right: 2%;
+	text-align: center;
+}
+
+#logout a
+{
+	text-decoration: none;
+	color: black;
+	cursor: default;
+	font-family: "geosans";
+	color:dodgerblue;
+}
+
+#logout a:hover
+{
+	color: #D12E7D;
+}
+
+#belowbody1
+{
+	display: inline-block;
+	text-align: center;
+	width: 25%;
+	height: 2%;
+	margin-top: 1%;
+}
+
+#belowbody2
+{
+	display: inline-block;
+	text-align: center;
+	width: 25%;
+	height: 2%;
+	margin-top: 1%;
+}
+
+#belowbody3
+{
+	display: inline-block;
+	width: 50%;
+	height: 2%;
+	margin-top: 1%;
+}
+
+#snap
+{
+	font-size: 16px;
+}
+
+#upload
+{
+	font-size: 16px;
+	border-radius: 8px;
+	text-align: center;
+	font-family: "geosans";
+	outline:none;
+}
+
+#right
+{
+	margin-left: 3%;
+	display: inline-block;
+	width: 45%;
+	height: 100%;
+	background-color: rgba(7,7,7, 0.5);
+	border-radius: 10px;
+	box-shadow: 6px 6px 4px rgba(0,0,0,5);
+}
+
+#rt
+{
+	display: block;
+	width: 100%;
+	height: 50%;
+}
+
+#rb
+{
+	display: block;
+	width: 100%;
+	height: 50%;
+}
+
+.pics
+{
+	margin: none;
+	height: 100%;
+	width: 24%;
+	object-fit: contain;
+	display: inline;
+}
+
+/*newpw.php*/
+#newpw
+{
+	height: 300px;
+}
